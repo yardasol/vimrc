@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 cd ~/.vim_runtime
 
-PLUGSLUGS=(`cat yardasol_plugslugs.txt`)
-for slug in ${PLUGINS[@]}
+PLUGSLUGS=(`cat "yardasol_plugslugs.txt"`)
+for plugslug in ${PLUGSLUGS[@]}
 do
     IFS='/'
     read -ra arr <<< "$plugslug"
@@ -12,5 +12,5 @@ do
     git clone git@github.com:$author/$plugin my_plugins/$plugin
 done
 
-cat ~/.vim_runtime/yardasol_configs > $PWD/my_configs.vim
+cat ~/.vim_runtime/yardasol_configs > my_configs.vim
 echo "Installed the yardasol Vim configuration successfully! Enjoy :-)"
