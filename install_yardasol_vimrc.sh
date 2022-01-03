@@ -12,5 +12,8 @@ do
     git clone git@github.com:$author/$plugin my_plugins/$plugin
 done
 
+# add ultisnips
+ln -s UltiSnips my_plugins/ultisnips/UltiSnips
+
 cat ~/.vim_runtime/yardasol_configs > my_configs.vim
 echo "Installed the yardasol Vim configuration successfully! Enjoy :-)"
