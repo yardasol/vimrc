@@ -13,7 +13,7 @@ do
 done
 
 # add ultisnips
-ln -s UltiSnips my_plugins/ultisnips/UltiSnips
+ln -s yardasol_snippets my_plugins/ultisnips/UltiSnips
 
 cat ~/.vim_runtime/yardasol_configs > my_configs.vim
 echo "Installed the yardasol Vim configuration successfully! Enjoy :-)"
