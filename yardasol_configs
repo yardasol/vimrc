@@ -1,0 +1,4 @@
+try
+    colorscheme default
+catch
+endtry
