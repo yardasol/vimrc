@@ -17,3 +17,7 @@ let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
 hi Conceal ctermbg=none
+
+" Linewidth
+set textwidth=80
+set colorcolumn=80
