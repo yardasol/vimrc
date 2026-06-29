@@ -3,21 +3,20 @@ try
 catch
 endtry
 
-" UltiSnips
-let g:UltiSnipsExpandTrigger='<tab>'
-let g:UltiSnipsJumpForwardTrigger='<tab>'
-let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
+" Break line at 120 characters
+set textwidth=120
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+let &colorcolumn=join(range(121,999),",")
 
-" vimtex
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
+"" Tabs and indentation
+set nosmartindent
+set softtabstop=4 "# of columns a <TAB> character created with in INSERT mode occupies
 
-" tex-conceal
-set conceallevel=1
-let g:tex_conceal='abdmg'
-hi Conceal ctermbg=none
+set undolevels=1000 " increase undo history to past 1000 actions
 
 " Linewidth
 set textwidth=80
 set colorcolumn=80
+
+" Aliases
+let @t = ':%s/\s\+$//e'

@@ -1,3 +1,6 @@
 lervag/vimtex
 sirver/ultisnips
 KeitaNakamura/tex-conceal.vim
+yegappan/taglist
+preservim/nerdtree
+tpope/vim-fugitive
